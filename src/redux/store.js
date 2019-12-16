@@ -5,4 +5,4 @@ import state from './state'
 
 
 
-export default createStore(reducers, state)
+export default createStore(reducers, state, applyMiddleware(thunk))
